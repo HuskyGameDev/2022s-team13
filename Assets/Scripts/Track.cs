@@ -8,19 +8,24 @@ public class Track : MonoBehaviour
     //public Sprite sprite;
 
     
-    public GameObject tracks;  // must be assinged in the inspector thing in unity itself
+    public GameObject tracks;  
     public Vector3 forward;
     public float speed = .01f;
     public float rotation;
 
-    public Track(float x, float y)
+    public Track(float x, float y, GameObject track, float zRotate)
     {
         // the sprite in question must be part of the Resources folder, drop the file type
         //sprite = Resources.Load("Sprites/tracks", typeof(Sprite)) as Sprite;
         //this.GetComponent<SpriteRenderer>().sprite = sprite;
 
+
+        tracks = track; // track should be a track prefab
         tracks = Instantiate(tracks);
-        //rotation = this.GetComponent<Transform>().rotation.eulerAngles.z;
+        tracks.transform.position = new Vector3(x, y, 0);
+
+        tracks.transform.Rotate(new Vector3(0, 0, 10), zRotate);  // when you rotate something it will rotate 
+        rotation = zRotate;
 
 
         forward.x = roundTo2(speed * Mathf.Cos(rotation * Mathf.Deg2Rad));
@@ -29,9 +34,7 @@ public class Track : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        //rotation = this.GetComponent<Transform>().rotation.eulerAngles.z;
-        
+    {        
 
     }
 
