@@ -1,0 +1,62 @@
+This is just going to be a complete example of how to create a level
+
+levels are h = 9 tiles w = 11 tiles, could make larger or smaller based on whether or not you want to
+
+We need to decide where each train car goes, each train car gets their own number, trains numbered go     0 steel - 11 normal one, normal one should be last one just to make matching numbers with ending slightly easier
+And ending place     from steel?? 0 - 10 zebra thing
+Same thing with track     from horizontal 0 - 20 for sw->ne right switch
+
+tracks never go straight up/down, curves handle that
+
+if you wanted to put multiple things on one tile you can separate it like so:
+track:train:end
+
+track numbers:
+0 = left/right
+1 = nw/se
+2 = sw/ne
+3 = curve left/ne
+4 = curve nw/right
+5 = curve ne/se
+6 = curve sw/right
+7 = curve left/se
+8 = curve nw/sw
+9 = left/right ne switch
+10 = nw/se right switch
+11 = ne/sw se switch
+12 = right/left sw switch
+13 = se/nw left switch
+14 = sw/ne nw switch
+15 = left/right se switch
+16 = nw/se sw switch
+17 = ne/sw left switch
+18 = right/left nw switch
+19 = se/nw ne switch
+20 = sw/ne right switch
+
+for train and ending numbers (arbitrary name, none given yet):
+1 = 
+2 = 
+3 = 
+4 = 
+5 = 
+6 = 
+7 = 
+8 = 
+9 = 
+10 = 
+11 = main train (train only)
+
+sample file size w = 11 h = 9 would look something like this:
+
+level title
+maybe level background image
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+00::11   00:11:05 00::     00::     00:05:   *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
