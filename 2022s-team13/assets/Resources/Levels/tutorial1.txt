@@ -1,0 +1,15 @@
+tutorial 1
+
+9
+11
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        00:10:   00::     00::     00::     00::     00::     00::01   *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *        
+*        *        *        *        *        *        *        *        *        *        *  
+
+//move engine from start to end, then grabs car and moves it back. only meant to demonstrate game mechanics. 
